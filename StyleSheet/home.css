@@ -1,0 +1,21 @@
+.troggle-btn-1 {
+    background: #B4F461;
+    color: #111111;
+    border: 0;
+    font-family: 'Lexend';
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.troggle-btn-2 {
+    background-color: #FFFFFF;
+    color: rgba(17, 17, 17, 0.7);
+    border: 1px solid rgba(17, 17, 17, 0.3);
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-family: 'Lexend';
+    font-size: 20px;
+    font-weight: 500;
+}

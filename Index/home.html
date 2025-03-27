@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style Sheet  -->
+    <link rel="stylesheet" href="/StyleSheet/home.css">
     <!-- Tailwind &  DaisyUI CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -14,21 +16,27 @@
 <body>
     <header>
         <!-- nav section  -->
-        <div class="bg-[#69634725] h-[150px] md:h-[100px] md:flex items-center justify-between md:p-5">
+        <div class="bg-[#aa974070] h-[150px] md:h-[100px] md:flex items-center justify-between md:p-5">
             <div class="text-center">
                 <button id="blog-btn" class="bg-[#B4F461] py-3 px-8 rounded-[8px] mt-2">Blog</button>
             </div>
-            <div class="flex items-center justify-center gap-4">
+            <div class="flex items-center justify-center gap-2">
                 <img src="/assets/logo.png" alt="">
                 <h2 class="text-[#111] font-[Lexend] text-2xl font-semibold">Donate Bangladesh</h2>
             </div>
             <div class="flex items-center gap-3 justify-center">
                 <img src="/assets/coin.png" alt="">
 
-                <h2 class="text-[#111111] font-[Lexend] font-medium text-2xl">5500</h2>
+                <h2 id="donation-balance" class="text-[#111111] font-[Lexend] font-medium text-2xl">5500</h2>
                 <h2 class="text-[#111111] font-[Lexend] font-medium text-2xl">BDT</h2>
 
             </div>
+        </div>
+        <!-- Troggle Feature Section  -->
+        <div class="flex items-center justify-center gap-4 mt-5 bg-[#ffffff52]">
+            <button id="display-donation-btn" class="troggle-btn-1">Donation</button>
+            <button id="display-history-btn" class="troggle-btn-2">History</button>
+
         </div>
     </header>
 
