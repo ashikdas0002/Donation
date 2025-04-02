@@ -11,3 +11,9 @@ function getInnerTextById(id) {
     const innerNumber = parseFloat(innerText);
     return innerNumber;
 }
+
+
+
+document.getElementById('blog-btn').addEventListener('click', function () {
+    window.location.href = 'blog.html';
+})
