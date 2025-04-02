@@ -45,6 +45,34 @@ document.getElementById('feni-donation-btn').addEventListener('click', function 
         document.getElementById('my_modal_1').showModal();
 
 
+        // Show Donation History
+        const bdTime = new Date().toLocaleString("en-US", {
+            timeZone: "Asia/Dhaka",
+            hour12: true,
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+        });
+
+        const donationHistory = document.getElementById('history-container');
+
+        const donationHistoryItem = document.createElement('div');
+        donationHistoryItem.innerHTML = `
+            
+   <div class="card bg-[#ffff] shadow-lg  w-full mt-5">
+  <div class="card-body">
+    <h2 class="card-title text-[#111] font-[Lexend] text-2xl font-bold">${feniDonationAmount}Tk Donate for Flood Relief in Feni,Bangladesh
+</h2>
+    <p class="text-[#1111118c] font-[Lexend] text-[16px] font-light">Date: ${bdTime} GMT +0600 (Bangladesh Standard Time)</p>
+  </div>
+</div>
+            
+            `;
+        donationHistory.appendChild(donationHistoryItem);
 
 
 

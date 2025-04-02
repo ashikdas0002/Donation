@@ -18,7 +18,8 @@
         <!-- nav section  -->
         <div class="bg-[#aa974070] h-[150px] md:h-[100px] md:flex items-center justify-between md:p-5">
             <div class="text-center">
-                <button id="blog-btn" class="bg-[#B4F461] py-3 px-8 rounded-[8px] mt-2">Blog</button>
+                <button id="blog-btn"
+                    class="bg-[#B4F461] py-3 px-8 rounded-[8px] mt-2 text-2xl font-[Lexend] text-[#111] font-semibold">Blog</button>
             </div>
             <div class="flex items-center justify-center gap-2">
                 <img src="/assets/logo.png" alt="">
@@ -35,17 +36,18 @@
         <!-- Troggle Feature Section  -->
         <div class=" md:flex items-center justify-center gap-4 mt-5 bg-[#ffffff52]">
             <div class="text-center mt-5">
-                <button id="display-donation-btn" class="troggle-btn-1">Donation</button>
+                <button id="donation-btn" class="troggle-btn-1">Donation</button>
             </div>
             <div class="text-center mt-5">
-                <button id="display-history-btn" class="troggle-btn-2">History</button>
+                <button id="history-btn" class="troggle-btn-2">History</button>
             </div>
 
         </div>
     </header>
 
     <main class="md:w-[1140px] mx-auto mt-10 mb-5">
-        <div id="donation-container">
+        <!-- Donation Container  -->
+        <div class="" id="donation-container">
             <!-- Donation Item-1  -->
             <div class="card lg:card-side bg-base-100 shadow-xl p-9 mt-6">
                 <figure>
@@ -173,12 +175,17 @@
                 </div>
             </div>
         </div>
+        <!-- History Container  -->
+        <div class="md:w-[1140px] mx-auto hidden" id="history-container">
+            <h2 class=" text-[#111] font-[Lexend] text-center font-bold text-4xl mt-4">Donation History</h2>
+        </div>
     </main>
     <!-- Script  -->
     <script src="/Script/utilitis.js"></script>
     <script src="/Script/nohakhaliDonation.js"></script>
     <script src="/Script/feniDonation.js"></script>
     <script src="/Script/quotaDonation.js"></script>
+    <script src="/Script/troggle.js"></script>
 </body>
 
 </html>
